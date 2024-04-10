@@ -1,0 +1,60 @@
+@import "hero.css";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family:  "Montserrat","Poppins", sans-serif;
+  color: #e2e2e2;
+}
+
+main{
+  background-color: #111;
+  padding-bottom : 200px;
+  padding-top: 100px;
+}
+
+.post{
+  display: grid;
+  grid-template-columns: 200px 1fr ;
+  max-width: 1400px;
+  margin: 0 auto;
+ 
+}
+.post img{
+  object-fit: cover;
+  grid-column: 2;
+  width: 100%;
+  border: 1px solid #e2e2e2 ;
+  /* display: none; */
+}
+
+.post-interno{
+  display: flex;
+  gap: 40px;
+}
+
+.post-subtitle div{ 
+  display: grid;
+  grid-template-columns: 1fr;
+
+  justify-items: center;
+  
+}
+.post .post-subtitle{
+grid-row: span 3;
+
+}
+.post-subtitle  h2{
+  font-size: 3rem;
+
+
+}
+.post-subtitle span{
+  font-size: 1.75rem;
+  margin-bottom: 40px;
+}
+.post-interno img{
+  display: block;
+}
